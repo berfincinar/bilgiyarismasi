@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Soru</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/quiz.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+       <h1>Soru-Cevap</h1>
+
+  <div class="quiz_wrapper">
+           <div class="quiz-time">
+            <br><div id="saniye">&nbsp;</div> <div id="timer">Kalan Süre:&nbsp; </div>       
+    </div>
+   
+           <div class="question" id="questionBox"> </div>
+           <div class="options">
+              <ul id="ul">
+                  <li id="op1" onclick="button(this)"></li>
+                  <li id="op2" onclick="button(this)"></li>
+                  <li id="op3" onclick="button(this)"></li>
+                  <li id="op4" onclick="button(this)"></li>
+              </ul>
+           </div>
+           <div class="score">
+               <div class="next">
+                  <button type="button" onclick="next()" id="button">İleri</button>
+               </div>
+
+               <div class="score-card">
+                  Skor : <span id="scoreCard">0</span>
+               </div>
+                <div id="kronometre">
+          <span id="minutes">00</span>:<span id="seconds">00</span> Sürede Tamamladınız.
+        </div>
+           </div>
+  </div>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

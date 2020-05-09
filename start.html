@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Soru</title>
+    
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="welcome_text">
+            <p style="color: white">KURALLAR</p>
+            <P style="color: white">1.Her soru 20 saniyedir.
+            <br>2.Süreniz bittiğinde uyarı mesajını göreceksiniz.Bundan dolayı diğer sorulara ulaşamayacak ve "TAMAM" diyerek yarışmaya baştan başlayacaksınız.</P>
+            <form class="welcome_form" name="welcome_form" onsubmit="submitForm(event)">
+                <input type="text" name="name">
+                <button>Başla</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- site.js -->
+    <script src="js/start.js"></script>
+</body>
+</html>
